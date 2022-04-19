@@ -7,7 +7,7 @@ export default function Counter() {
       <p>Counter {counter}</p>
       <button
         onClick={(e) => {
-          setCounter(counter + 1);
+          setCounter((counter) => counter + 1);
         }}
       >
         Increment
