@@ -10,7 +10,7 @@ export default function Counter() {
           setCounter(counter + 1);
         }}
       >
-        INC
+        Increment
       </button>
 
       <button
@@ -18,7 +18,23 @@ export default function Counter() {
           setCounter(counter - 1);
         }}
       >
-        DEC
+        Decrement
+      </button>
+
+      <button
+        onClick={(e) => {
+          setCounter(counter + 15);
+        }}
+      >
+        Increment(15)
+      </button>
+
+      <button
+        onClick={(e) => {
+          setCounter(0);
+        }}
+      >
+        Reset(0)
       </button>
     </>
   );
