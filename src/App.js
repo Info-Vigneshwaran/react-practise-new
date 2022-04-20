@@ -3,6 +3,7 @@ import './style.css';
 import Home from './components/Home';
 import Counter from './components/Counter';
 import Posts from './components/Posts';
+import SlowFunction from './components/SlowFunction';
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,13 +17,15 @@ export default function App() {
   return (
     <Router>
       <nav>
-        <Link to="/">Home</Link> | <Link to="counter">Counter</Link> |
-        <Link to="posts">Posts</Link> |
+        <Link to="/">Home</Link> | <Link to="counter">Counter</Link> |{' '}
+        <Link to="posts">useEffect(Dynamic API Call)</Link> |{' '}
+        <Link to="slow_fn">useMemo</Link> |{' '}
       </nav>
       <Routes>
         <Route index element={<Home />} />
         <Route path="counter" element={<Counter />} />
         <Route path="posts" element={<Posts />} />
+        <Route path="slow_fn" element={<SlowFunction />} />
       </Routes>
     </Router>
   );
