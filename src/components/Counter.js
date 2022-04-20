@@ -51,6 +51,9 @@ export default function Counter() {
       >
         Reset(0)
       </button>
+
+      <br />
+      <br />
       <span>{user.age}</span>
 
       <button onClick={handleUser}>Update User</button>

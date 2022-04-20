@@ -4,6 +4,7 @@ export default function Posts() {
   const [api_data, setApiData] = useState([]);
   const api_url = `https://jsonplaceholder.typicode.com/`;
   useEffect(() => {
+    console.log('render');
     let new_api_url = `${api_url}${type}`;
     fetch(new_api_url).then(async (response) => {
       let result = await response.json();
