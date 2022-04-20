@@ -12,7 +12,8 @@ export default function SlowFunction() {
   };
   useEffect(() => {
     console.log('reder');
-  }, [txt_value,count]);
+  }, [txt_value, count]);
+  dd;
   const doubleNumber = useMemo(() => {
     slow_fn(2);
   }, [count]);
