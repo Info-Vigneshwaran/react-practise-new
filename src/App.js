@@ -3,7 +3,7 @@ import './style.css';
 import Home from './components/Home';
 import Counter from './components/Counter';
 import Posts from './components/Posts';
-import SlowFunction from './components/SlowFunction';
+import UseMemofn from './components/UseMemofn';
 import {
   BrowserRouter as Router,
   Switch,
@@ -25,7 +25,7 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="counter" element={<Counter />} />
         <Route path="posts" element={<Posts />} />
-        <Route path="slow_fn" element={<SlowFunction />} />
+        <Route path="slow_fn" element={<UseMemofn />} />
       </Routes>
     </Router>
   );

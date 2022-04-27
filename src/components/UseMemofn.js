@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 
-export default function SlowFunction() {
+export default function UseMemofn() {
   const [count, setCount] = useState(0);
   const [txt_value, setTxtValue] = useState(false);
 
